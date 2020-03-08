@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ee">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content=""> 
+        <meta name="author" content="">
+        <title>Ostukorv</title>
+        <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+        <!-- minu CSS -->
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <!-- päis -->
+        <header class="py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 my-3 text-center"><img src="logo2.png" width="50%"></div>              
+                </div>          
+            </div>
+        </header>
+        <!-- navigatsioon -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Vannisoolad</a> 
+                            <a class="dropdown-item" href="#">Vannipiimad</a> 
+                            <a class="dropdown-item" href="#">Vannipommid</a>
+                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Kehakreemid</a> 
+                            <a class="dropdown-item" href="#">Keha&otilde;lid</a> 
+                            <a class="dropdown-item" href="#">Kehakoorijad</a> 
+                            <a class="dropdown-item" href="#">Deodorandid</a> 
+                            <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>  
+                        </div> 
+                    </li> 
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a> 
+                            <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
+                            <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
+                        </div> 
+                    </li> 
+                </ul>
+                <!-- search -->
+                <form class="form-inline m-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
+                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
+                </form>
+            </div>
+            <!-- cart -->
+            <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
+        </nav> 
+        <section>
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb bg-white my-2">
+                    <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                    <li class="breadcrumb-item active">Ostukorv</li>
+                </ol>
+            </nav>
+        </section>
+        <!-- ostukorv -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex align-items-start flex-column">
+                        <div class="mb-auto p-2"><h4>Ostukorvis on 1 toode</h4> <p>Siin lehel Te võitke näha oma ostukorvi seisund. </p></div>    
+                        <div class="mb-auto p-2 row">
+                            <div class="col-lg-6">
+                                <img src="soap.png" width="100%">
+                            </div>
+                            <div class="col-lg-6">
+                                <p>15.99&#8364;</p>
+                                <p>Toode 1</p>
+                                    <select class="form-control col-lg-5 form-sm" id="kogus">
+                                        <option>0</option>
+                                        <option selected="selected">1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                <br/>
+                                                        <div class="p-2">
+                            <p>Tarne: <span class="text-danger">tasuta</span></p>
+                            <p>Kokku: <span class="text-danger">15.99&#8364;</span></p>
+                        </div>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+<form>
+    <div class="mb-auto p-2"><h4>Teie kontaktandmed</h4></div>    
+  <div class="form-row">
+      
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Eesnimi:</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Eesnimi">
+    </div>
+          <div class="form-group col-md-6">
+      <label for="inputEmail4">Perekonnanimi</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Perekonnanimi">
+    </div>
+          <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">ssss</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Tänav 5-4">
+  </div>
+  <div class="form-row">
+
+    <div class="form-group col-md-4">
+      <label for="inputState">Linn</label>
+      <select id="inputState" class="form-control">
+        <option selected>Vali...</option>
+	      <option value="1">Abja-Paluoja</option>
+	      <option value="2">Antsla</option>
+	      <option value="3">Elva</option>
+	      <option value="4">Haapsalu</option>
+	      <option value="5">Jõgeva</option>
+	      <option value="6">Jõhvi</option>
+	      <option value="8">Kallaste</option>
+	      <option value="7">Kärdla</option>
+	      <option value="9">Karksi-Nuia</option>
+	      <option value="10">Kehra</option>
+	      <option value="11">Keila</option>
+	      <option value="12">Kilingi-Nõmme</option>
+	      <option value="13">Kiviõli</option>
+	      <option value="14">Kohtla-Järve</option>
+	      <option value="15">Kunda</option>
+	      <option value="16">Kuressaare</option>
+	      <option value="17">Lihula</option>
+	      <option value="18">Loksa</option>
+	      <option value="19">Maardu</option>
+	      <option value="20">Mustvee</option>
+	      <option value="21">Narva</option>
+	      <option value="22">Narva-Jõesuu</option>
+	      <option value="23">Otepää</option>
+	      <option value="27">Paide</option>
+	      <option value="28">Paldiski</option>
+	      <option value="24">Pärnu</option>
+	      <option value="25">Põltsamaa</option>
+	      <option value="26">Põlva</option>
+	      <option value="45">Püssi</option>
+	      <option value="30">Rakvere</option>
+	      <option value="29">Räpina</option>
+	      <option value="31">Rapla</option>
+	      <option value="32">Saue</option>
+	      <option value="33">Sillamäe</option>
+	      <option value="34">Sindi</option>
+	      <option value="35">Suure-Jaani</option>
+	      <option value="38">Tallinn</option>
+	      <option value="46">Tamsalu</option>
+	      <option value="39">Tapa</option>
+	      <option value="40">Tartu</option>
+	      <option value="36">Tõrva</option>
+	      <option value="37">Türi</option>
+	      <option value="43">Valga</option>
+	      <option value="44">Viljandi</option>
+	      <option value="41">Võhma</option>
+	      <option value="42">Võru</option>
+        <option value="0">Muu linn</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Postiindeks</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+    <div class="form-group">
+    <label for="exampleFormControlTextarea1">Lisa</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Siia võite trükkida oma kommentaari või soovitusi"></textarea>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Nõustun tingimustega
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-danger">Vormista tellimus</button>
+</form>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>           
+                </div>   
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        <!-- jalus -->
+<footer class="mainfooter bg-light text-danger" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Kontaktandmed</h4>
+          <ul class="list-unstyled ">
+            <li><a class="text-dark" href="#"><i class="fa fa-phone"></i> &nbsp; email@testimine.ee</a></li>
+            <li><a class="text-dark" href="#"><i class="fa fa-envelope"></i> &nbsp;+3725586454</a></li>
+            <li><a class="text-dark" href="#"><i class="fa fa-globe"></i> &nbsp; Kasika 1, Tartu, 80547 Tartu maakond</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Menüü</h4>
+          <ul class="list-unstyled">
+            <li><a class="text-dark" href="#">Uued tooted</a></li>
+            <li><a class="text-dark" href="#">Vannitooted</a></li>
+            <li><a class="text-dark" href="#">Kehahooldus</a></li>
+            <li><a class="text-dark" href="#">Näohooldus </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Muu</h4>
+          <ul class="list-unstyled">
+            <li><a class="text-dark" href="#">Uudised</a></li>
+            <li><a class="text-dark" href="#">Meist</a></li>
+            <li><a class="text-dark" href="#">Kuidas meid leida</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3 ">
+    		<h4>Follow Us</h4>
+            <ul class="social-network social-circle ">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" style="color:black"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin" style="color:black"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Twitter"><i class="fa fa-twitter" style="color:black"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="VKontakte"><i class="fa fa-vk" style="color:black"></i></a></li>   
+                <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram" style="color:black"></i></a></li>   
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<h5><p class="text-center">&copy; Copyright 2020 - Company Name.  All rights reserved.</p></h5>
+		</div>
+	</div>
+
+
+  </div>
+  </div>
+</footer>     
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    </body>
+</html>         
