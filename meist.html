@@ -1,274 +1,351 @@
 <!doctype html>
 <html lang="ee">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content=""> 
-        <meta name="author" content="">
-        <title>Avaleht</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-        <!-- minu CSS -->
-        <link rel="stylesheet" href="custom.css">
-    </head>
-    <body>
-        <!-- päis --->
-        <header class="py-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>              
-                </div>          
-            </div>
-        </header>
-        <!-- navigatsioon -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Vannisoolad</a> 
-                            <a class="dropdown-item" href="#">Vannipiimad</a> 
-                            <a class="dropdown-item" href="#">Vannipommid</a>
-                            <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
-                        </div> 
-                    </li> 
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Kehakreemid</a> 
-                            <a class="dropdown-item" href="#">Keha&otilde;lid</a> 
-                            <a class="dropdown-item" href="#">Kehakoorijad</a> 
-                            <a class="dropdown-item" href="#">Deodorandid</a> 
-                            <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>  
-                        </div> 
-                    </li> 
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a> 
-                            <a class="dropdown-item" href="#">Niisutus ja toitmine</a> 
-                            <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
-                        </div> 
-                    </li> 
-                                        <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
 
-                </ul>
-                <!-- search -->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
-                    <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
-                </form>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Avaleht</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- minu CSS -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <!-- päis --->
+    <header class="py-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 my-3 text-center">
+                    <a href="index.html"><img src="logo2.png" width="50%"></a>
+                </div>
             </div>
-            <!-- cart -->
-            <!--
+        </div>
+    </header>
+    <!-- navigatsioon -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Uued tooted</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vannitooted</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Vannisoolad</a>
+                        <a class="dropdown-item" href="#">Vannipiimad</a>
+                        <a class="dropdown-item" href="#">Vannipommid</a>
+                        <a class="dropdown-item" href="list.html">Seebid ja du&scaron;igeelid</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kehahooldus</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Kehakreemid</a>
+                        <a class="dropdown-item" href="#">Keha&otilde;lid</a>
+                        <a class="dropdown-item" href="#">Kehakoorijad</a>
+                        <a class="dropdown-item" href="#">Deodorandid</a>
+                        <a class="dropdown-item" href="#">K&auml;te ja jalgade hooldus</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">N&auml;ohooldus</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Puhastus ja toniseerimine</a>
+                        <a class="dropdown-item" href="#">Niisutus ja toitmine</a>
+                        <a class="dropdown-item" href="#">Koorijad ja maskid</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+
+            </ul>
+            <!-- search -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
+                <button class="btn btn-outline-white my-2 my-sm-0" type="submit">
+                    <svg class="lnr lnr-magnifier">
+                        <use xlink:href="#lnr-magnifier"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+        <!-- cart -->
+        <!--
             <svg class="lnr mt-auto mr-3 my-3 lnr-cart"><use xlink:href="#lnr-cart"></use></svg>
             -->
-            <button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button>
-        </nav> 
-        <!-- breadcrumb -->
-        <section>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white my-2 ml-2">
-                    <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
+        <button class="btn btn-danger my-2 my-sm-0" href="cart.html" type="submit">
+            <svg class="lnr lnr-cart">
+                <use xlink:href="#lnr-cart"></use>
+            </svg>
+        </button>
+    </nav>
+    <!-- breadcrumb -->
+    <section>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white my-2 ml-2">
+                <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
                     <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
                     -->
-                    <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
-                </ol>
-            </nav>  
-        </section>
+                <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+            </ol>
+        </nav>
+    </section>
 
     <main role="main">
 
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+        <!--carousel-->
+        <h1 align="center">Meie galerii</h1>
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <a href="#">
+
+                        <picture>
+                            <source srcset="https://dummyimage.com/2000x500/dc3641/fff" media="(min-width: 1400px)">
+                            <!--  <source srcset="https://dummyimage.com/1400x500/#007aeb/4196e5" media="(min-width: 769px)">
+                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)"> -->
+                            <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+                        </picture>
+
+                        <div class="carousel-caption">
+                            <div>
+                                <h2>Esimene pilt</h2>
+                                <p>Siin on kirjeldus</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- /.carousel-item -->
+                <div class="carousel-item">
+                    <a href="#">
+                        <picture>
+                            <source srcset="https://dummyimage.com/2000x500/4e9e0c/fff" media="(min-width: 1400px)">
+                            <!-- <source srcset="https://dummyimage.com/1400x500/007aeb/4196e5" media="(min-width: 769px)">
+                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)"> -->
+                            <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+                        </picture>
+
+                        <div class="carousel-caption justify-content-center align-items-center">
+                            <div>
+                                <h2>Teine pilt</h2>
+                                <p>Siin on kirjeldus</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- /.carousel-item -->
+                <div class="carousel-item">
+                    <a href="#">
+                        <picture>
+                            <source srcset="https://dummyimage.com/2000x500/0867f5/fff" media="(min-width: 1400px)">
+                            <!-- <source srcset="https://dummyimage.com/1400x500/007aeb/4196e5" media="(min-width: 769px)">
+                       <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)"> -->
+                            <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+                        </picture>
+
+                        <div class="carousel-caption justify-content-center align-items-center">
+                            <div>
+                                <h2>Kolmas pilt</h2>
+                                <p>Siin on kirjeldus</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- /.carousel-item -->
+            </div>
+            <!-- /.carousel-inner -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-      </section>
+        <!-- carousel -->
 
-      <div class="album py-5 bg-light">
-          <h1 align="center">Meie töötajad</h1>
-        <div class="container">
+        <div class="album py-5 bg-light">
+            <h1 align="center">Meie töötajad</h1>
+            <div class="container">
 
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-               <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3 align="center">This is heading 1</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
-                      <button type="button" class="btn btn-danger">Broneeri aega</button>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 align="center">Doris </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
+                                        <button type="button" class="btn btn-danger">Broneeri aega</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3 align="center">This is heading 1</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
-                      <button type="button" class="btn btn-danger">Broneeri aega</button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 align="center">Alys </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
+                                        <button type="button" class="btn btn-danger">Broneeri aega</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3 align="center">This is heading 1</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
-                      <button type="button" class="btn btn-danger">Broneeri aega</button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 align="center">Ellis </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
+                                        <button type="button" class="btn btn-danger">Broneeri aega</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3 align="center">This is heading 1</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
-                      <button type="button" class="btn btn-danger">Broneeri aega</button>                     
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 align="center">Princess </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
+                                        <button type="button" class="btn btn-danger">Broneeri aega</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3 align="center">This is heading 1</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
-                      <button type="button" class="btn btn-danger">Broneeri aega</button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 align="center">Delores </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
+                                        <button type="button" class="btn btn-danger">Broneeri aega</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-               <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
-                <div class="card-body">
-                    <h3 align="center">This is heading 1</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
-                      <button type="button" class="btn btn-danger">Broneeri aega</button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img src="https://advokat-spb.org/wp-content/uploads/2014/10/3dfc3f46ca8c3c8a1951307894b50dcf_images-for-profile-silhouette-unknown-person-clipart_1280-1024-790x632.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 align="center">Iris </h3>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Kontaktandmed</button>
+                                        <button type="button" class="btn btn-danger">Broneeri aega</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-        
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
 
     </main>
 
-        
-        <!-- jalus --->
-<footer class="mainfooter bg-light text-danger" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <h4>Kontaktandmed</h4>
-          <ul class="list-unstyled ">
-            <li><a class="text-dark" href="#"><i class="fa fa-phone"></i> &nbsp; email@testimine.ee</a></li>
-            <li><a class="text-dark" href="#"><i class="fa fa-envelope"></i> &nbsp;+3725586454</a></li>
-            <li><a class="text-dark" href="#"><i class="fa fa-globe"></i> &nbsp; Kasika 1, Tartu, 80547 Tartu maakond</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <h4>Menüü</h4>
-          <ul class="list-unstyled">
-            <li><a class="text-dark" href="#">Uued tooted</a></li>
-            <li><a class="text-dark" href="#">Vannitooted</a></li>
-            <li><a class="text-dark" href="#">Kehahooldus</a></li>
-            <li><a class="text-dark" href="#">Näohooldus </a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <h4>Muu</h4>
-          <ul class="list-unstyled">
-            <li><a class="text-dark" href="#">Uudised</a></li>
-            <li><a class="text-dark" href="#">Meist</a></li>
-            <li><a class="text-dark" href="#">Kuidas meid leida</a></li>
-            <li>
-              <a href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    	<div class="col-md-3 ">
-    		<h4>Follow Us</h4>
-            <ul class="social-network social-circle ">
-             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" style="color:black"></i></a></li>
-             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin" style="color:black"></i></a></li>
-            <li><a href="#" class="icoFacebook" title="Twitter"><i class="fa fa-twitter" style="color:black"></i></a></li>
-             <li><a href="#" class="icoLinkedin" title="VKontakte"><i class="fa fa-vk" style="color:black"></i></a></li>   
-                <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram" style="color:black"></i></a></li>   
-            </ul>				
-		</div>
-    </div>
-	<div class="row">
-		<div class="col-md-12 copy">
-			<h5><p class="text-center">&copy; Copyright 2020 - Company Name.  All rights reserved.</p></h5>
-		</div>
-	</div>
+    <!-- jalus --->
+    <footer class="mainfooter bg-light text-danger" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Kontaktandmed</h4>
+                            <ul class="list-unstyled ">
+                                <li><a class="text-dark" href="#"><i class="fa fa-phone"></i> &nbsp; email@testimine.ee</a></li>
+                                <li><a class="text-dark" href="#"><i class="fa fa-envelope"></i> &nbsp;+3725586454</a></li>
+                                <li><a class="text-dark" href="#"><i class="fa fa-globe"></i> &nbsp; Kasika 1, Tartu, 80547 Tartu maakond</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Menüü</h4>
+                            <ul class="list-unstyled">
+                                <li><a class="text-dark" href="#">Uued tooted</a></li>
+                                <li><a class="text-dark" href="#">Vannitooted</a></li>
+                                <li><a class="text-dark" href="#">Kehahooldus</a></li>
+                                <li><a class="text-dark" href="#">Näohooldus </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Muu</h4>
+                            <ul class="list-unstyled">
+                                <li><a class="text-dark" href="#">Uudised</a></li>
+                                <li><a class="text-dark" href="#">Meist</a></li>
+                                <li><a class="text-dark" href="#">Kuidas meid leida</a></li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle ">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook" style="color:black"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin" style="color:black"></i></a></li>
+                            <li><a href="#" class="icoFacebook" title="Twitter"><i class="fa fa-twitter" style="color:black"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="VKontakte"><i class="fa fa-vk" style="color:black"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram" style="color:black"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <h5><p class="text-center">&copy; Copyright 2020.  All rights reserved.</p></h5>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+</body>
 
-  </div>
-  </div>
-</footer>
-        <!-- jQuery, Popper.js, Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-  </body>
 </html>
